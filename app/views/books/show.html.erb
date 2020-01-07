@@ -1,8 +1,16 @@
-<h4><span>Title:</span>
-	<%= @book.title %>
-</h4>
-<h4><span>Body:</span>
-	<%= @book.body %>
-</h4>
-<%= link_to "Edit", edit_book_path %>
-<%= link_to "Back", books_path %>
+<div class="show">
+	<% if flash[:notice] %>
+		<div class="flash">
+			<%= flash[:notice] %>
+		</div>
+	<% end %>
+	<p><strong>Title:</strong>
+		<%= @book.title %>
+	</p>
+	<p><strong>Body:</strong>
+		<%= @book.body %>
+	</p>
+	<%= link_to "Edit", edit_book_path %>
+	<span>|</span>
+	<%= link_to "Back", books_path %>
+</div>

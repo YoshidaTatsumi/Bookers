@@ -28,13 +28,70 @@
 
 body{
 	color: #333;
+	font-size: 13px;
 	font-family: verdana, arial, helvetica, sans-serif;
 	margin: 33px;
 }
 
+.flash {
+	margin: 33px;
+}
+
+.error-message {
+	width: 450px;
+	border: 2px solid red;
+	padding: 7px;
+	padding-bottom: 0;
+	margin-bottom: 20px;
+	background-color: #f0f0f0;
+}
+
+.error-message h2 {
+	padding: 5px 5px 5px 15px;
+	font-size: 12px;
+	background-color: #c00;
+	color: #fff;
+	margin: -7px;
+	margin-bottom: 0;
+}
+
+.error-message ul {
+	margin: 33px;
+}
+
+.field_with_errors {
+	background-color: red;
+	padding: 2px;
+	display: table;
+}
+
+
+a {
+	color: #333;
+}
+
+a:visited {
+	color: #666;
+}
+
+.field {
+	margin-bottom: 10px;
+}
+
+.action {
+	margin-bottom: 10px;
+}
+
+.flash {
+	color: green;
+}
+
+label{
+	display: block;
+}
+
  /*top用CSS*/
  .top-headline {
- 	font-size: 2em;
  	font-weight: bold;
  }
 
@@ -52,8 +109,6 @@ body{
 
  /*index用CSS*/
  .index h1 {
- 	font-size: 2em;
- 	font-weight: bold;
  	margin-bottom: 20px;
  }
 
@@ -65,5 +120,21 @@ body{
 	padding-bottom: 7px;
 	padding-left: 5px;
 	padding-right: 5px;
+}
+
+.index h2 {
+	margin-bottom: 20px;
+}
+
+
+/*show用CSS*/
+.show p {
+	font-size: 13px;
+	margin: 33px;
+}
+
+/*edit用のCSS*/
+.edit h1 {
+	margin-bottom: 20px;
 }
 
